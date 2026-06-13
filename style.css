@@ -462,88 +462,51 @@ ul { list-style: none; }
 }
 
 /* ---------- PROJECTS ---------- */
-.projects-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  max-width: 800px; 
-  margin: 0 auto;  /* Centers the grid on the page */
-  gap: 24px;
-}
-
 .project-card {
   display: flex;
-  flex-direction: row; /* Aligns image and info side-by-side */
-  align-items: center;
-}
-
-.project-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
-  border-color: rgba(0, 212, 255, 0.3);
+  flex-direction: row;
+  align-items: stretch; /* Ensures info and media match height */
+  background: var(--navy);
+  border: 1px solid rgba(0, 212, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
 }
 
 .project-media {
-  width: 40%; /* Image takes 40% of the card width */
-  height: auto;
+  width: 40%;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-media img, 
+.project-media iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fill the space without distortion */
 }
 
 .project-info {
-  width: 60%; /* Content takes the remaining 60% */
+  width: 60%;
+  padding: 32px; /* Increased padding for better readability */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* Responsive adjustment for mobile */
+/* Ensure mobile layout remains clean */
 @media (max-width: 768px) {
   .project-card {
-    flex-direction: column; /* Stacks back to normal on small screens */
+    flex-direction: column;
   }
   .project-media, .project-info {
     width: 100%;
   }
-}
-
-
-.project-tag {
-  font-family: var(--font-display);
-  font-size: 0.7rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--cyan);
-  background: var(--cyan-dim);
-  padding: 4px 10px;
-  border-radius: 4px;
-  display: inline-block;
-  margin-bottom: 12px;
-}
-
-.project-info h3 {
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 600;
-  margin-bottom: 10px;
-  color: var(--white);
-}
-
-.project-info p {
-  font-size: 0.88rem;
-  color: var(--grey);
-  margin-bottom: 16px;
-  line-height: 1.7;
-}
-
-.project-tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.project-tech span {
-  font-size: 0.75rem;
-  font-family: var(--font-display);
-  color: var(--grey);
-  border: 1px solid var(--grey-dark);
-  padding: 3px 10px;
-  border-radius: 4px;
+  .project-media { min-height: 200px; }
+  .project-info { padding: 24px; }
 }
 
 /* ---------- CONTACT ---------- */
