@@ -471,11 +471,9 @@ ul { list-style: none; }
 }
 
 .project-card {
-  background: var(--navy);
-  border: 1px solid rgba(0, 212, 255, 0.08);
-  border-radius: var(--radius);
-  overflow: hidden;
-  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  display: flex;
+  flex-direction: row; /* Aligns image and info side-by-side */
+  align-items: center;
 }
 
 .project-card:hover {
@@ -485,11 +483,24 @@ ul { list-style: none; }
 }
 
 .project-media {
-  height: 200px;
-  border-radius: 0;
+  width: 40%; /* Image takes 40% of the card width */
+  height: auto;
 }
 
-.project-info { padding: 24px; }
+.project-info {
+  width: 60%; /* Content takes the remaining 60% */
+}
+
+/* Responsive adjustment for mobile */
+@media (max-width: 768px) {
+  .project-card {
+    flex-direction: column; /* Stacks back to normal on small screens */
+  }
+  .project-media, .project-info {
+    width: 100%;
+  }
+}
+
 
 .project-tag {
   font-family: var(--font-display);
