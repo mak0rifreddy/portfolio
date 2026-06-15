@@ -1,3 +1,7 @@
+/* =============================================
+   FRED MAKORI â€” PORTFOLIO STYLESHEET
+   ============================================= */
+
 /* ---------- TOKENS ---------- */
 :root {
   --navy:       #0A0F1E;
@@ -114,7 +118,6 @@ ul { list-style: none; }
   letter-spacing: 0.05em;
   text-align: center;
   padding: 16px;
-
 }
 
 /* ---------- NAVBAR ---------- */
@@ -274,8 +277,6 @@ ul { list-style: none; }
 }
 
 .scroll-line {
-  display: flex;
-  justify-content: center;
   width: 1px;
   height: 48px;
   background: linear-gradient(to bottom, var(--cyan), transparent);
@@ -457,7 +458,7 @@ ul { list-style: none; }
 }
 
 .timeline-content li::before {
-  content: '›';
+  content: 'â€º';
   position: absolute;
   left: 0;
   color: var(--cyan);
@@ -465,47 +466,126 @@ ul { list-style: none; }
 }
 
 /* ---------- PROJECTS ---------- */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
 .project-card {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch; /* Ensures info and media match height */
   background: var(--navy);
-  border: 1px solid rgba(0, 212, 255, 0.1);
-  border-radius: 12px;
+  border: 1px solid rgba(0, 212, 255, 0.08);
+  border-radius: var(--radius);
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 212, 255, 0.3);
 }
 
 .project-media {
-  width: 40%;
-  aspect-ratio: 16 / 9; /* Forces a perfect video aspect ratio */
+  height: 200px;
+  border-radius: 0;
 }
 
-.project-media img, 
-.project-media iframe {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images fill the space without distortion */
+.project-media.image-placeholder { border: none; border-radius: 0; }
+
+.project-info { padding: 24px; }
+
+.project-tag {
+  font-family: var(--font-display);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  background: var(--cyan-dim);
+  padding: 4px 10px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 12px;
 }
 
-.project-info {
-  width: 60%;
-  padding: 32px; /* Increased padding for better readability */
+.project-info h3 {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.project-info p {
+  font-size: 0.88rem;
+  color: var(--grey);
+  margin-bottom: 16px;
+  line-height: 1.7;
+}
+
+.project-tech {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 
-/* Ensure mobile layout remains clean */
-@media (max-width: 768px) {
-  .project-card {
-    flex-direction: column;
-  }
-  .project-media, .project-info {
-    width: 100%;
-  }
-  .project-media { min-height: 200px; }
-  .project-info { padding: 24px; }
+.project-tech span {
+  font-size: 0.75rem;
+  font-family: var(--font-display);
+  color: var(--grey);
+  border: 1px solid var(--grey-dark);
+  padding: 3px 10px;
+  border-radius: 4px;
+}
+
+/* ---------- EDUCATION ---------- */
+.edu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.edu-card {
+  background: var(--navy-card);
+  border: 1px solid rgba(0, 212, 255, 0.08);
+  border-radius: var(--radius);
+  padding: 32px 28px;
+  transition: border-color var(--transition);
+}
+
+.edu-card:hover { border-color: rgba(0, 212, 255, 0.3); }
+
+.edu-year {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--cyan-dim);
+  display: block;
+  margin-bottom: 12px;
+  -webkit-text-stroke: 1px var(--cyan);
+  color: transparent;
+}
+
+.edu-card h3 {
+  font-family: var(--font-display);
+  font-size: 0.97rem;
+  font-weight: 600;
+  color: var(--white);
+  margin-bottom: 6px;
+}
+
+.edu-school {
+  font-size: 0.82rem;
+  color: var(--cyan);
+  display: block;
+  margin-bottom: 12px;
+}
+
+.edu-card p {
+  font-size: 0.87rem;
+  color: var(--grey);
+  line-height: 1.65;
 }
 
 /* ---------- CONTACT ---------- */
