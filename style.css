@@ -478,11 +478,7 @@ ul { list-style: none; }
 
 .project-media {
   width: 40%;
-  min-height: 250px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  aspect-ratio: 16 / 9; /* Forces a perfect video aspect ratio */
 }
 
 .project-media img, 
