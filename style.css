@@ -4,10 +4,10 @@
 
 /* ---------- TOKENS ---------- */
 :root {
-  --navy:       #2D7353;
+  --navy:       #0A0F1E;
   --navy-card:  #111827;
   --navy-light: #1E2A3A;
-  --cyan:       #00D4FF;
+  --cyan:       #2D7353;
   --cyan-dim:   rgba(0, 212, 255, 0.12);
   --cyan-glow:  rgba(0, 212, 255, 0.35);
   --white:      #E8EDF5;
