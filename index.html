@@ -3,173 +3,127 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fred Makori - Mechatronic Engineer</title>
+  <title>Fred Makori — Mechatronic Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-  <!-- ========== NAVIGATION ========== -->
+  <!-- NAV -->
   <nav id="navbar">
-    <div class="nav-logo">FM<span class="dot">.</span></div>
+    <a href="index.html" class="nav-logo">Fred Makori<span>.</span></a>
     <ul class="nav-links">
-      <li><a href="#about">Home</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </button>
   </nav>
 
-  <!-- ========== HERO ========== -->
-  <section id="hero">
-    <canvas id="circuitCanvas"></canvas>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Mechatronic Engineer · Nairobi, Kenya</p>
-      <h1 class="hero-name">Fred<br /><span class="accent">Makori</span></h1>
-      <p class="hero-tagline">
-        Building intelligent systems at the intersection of<br />
-        hardware, embedded software, and automation.
-      </p>
-      <div class="hero-cta">
-       <a href="projects.html" class="btn btn-outline">Projects</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== ABOUT ========== -->
-  <section id="about" class="section">
-    <div class="container about-grid">
-      <div class="about-image-wrap">
-        <div class="image-placeholder">
-          <img src="assets/profile.jpeg" alt="Fred Makori" loading="lazy" />
-        </div>
+  <!-- ABOUT -->
+  <section id="about" class="section alt">
+    <div class="container two-col">
+      <div class="photo-wrap">
+        <img src="assets/profile.jpeg" alt="Fred Makori" />
       </div>
       <div class="about-text">
-        <p class="section-label">About Me</p>
-        <h2 class="section-heading">Engineering at the intersection of machines and code.</h2>
-        <p>
-          I'm a dynamic Mechatronic Engineer with deep expertise in IoT, embedded systems, and
-          systems integration. From mining drill rigs to secure biometric locks, I design and build
-          end-to-end solutions that bridge the physical and digital worlds.
-        </p>
-        <p>
-          My background spans Game development, PLC programming, electrical schematics, 3D modelling, and
-          industrial automation, with hands-on experience in construction, manufacturing, automotive, and
-          product development sectors across Kenya and beyond.
-        </p>
-        <div class="about-stats">
-          <div class="stat">
-            <span class="stat-number" data-target="5">0</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number" data-target="10">0</span>
-            <span class="stat-label">Projects Delivered</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number" data-target="4">0</span>
-            <span class="stat-label">Industries</span>
-          </div>
+        <p class="label">About</p>
+        <h2>Engineering at the intersection of machines and code.</h2>
+        <p>I'm a Mechatronic Engineer with expertise in IoT, embedded systems, and systems integration. From mining drill rigs to secure biometric locks, I design and build end-to-end solutions that bridge the physical and digital worlds.</p>
+        <p>My background spans game development, PLC programming, electrical schematics, 3D modelling, and industrial automation — with hands-on experience across construction, manufacturing, automotive, and product development sectors in Kenya and beyond.</p>
+        <div class="stats-row">
+          <div class="stat"><span class="num">5+</span><span class="lbl">Years Experience</span></div>
+          <div class="stat"><span class="num">10+</span><span class="lbl">Projects Delivered</span></div>
+          <div class="stat"><span class="num">4</span><span class="lbl">Industries</span></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ========== SKILLS ========== -->
-  <section id="skills" class="section section-dark">
+  <!-- SKILLS -->
+  <section id="skills" class="section">
     <div class="container">
-      <p class="section-label">Capabilities</p>
-      <h2 class="section-heading">Tools &amp; Technologies</h2>
-      <div class="skills-grid">
+      <p class="label">Capabilities</p>
+      <h2>Tools &amp; Technologies</h2>
+      <div class="grid-3">
 
-        <div class="skill-card">
-          <div class="skill-icon">⚙️</div>
-          <h3>PLCs &amp; Automation </h3>
-          <p>PLC programming in Structured Text, FBD, and CFC. Siemens-certified mechatronic assistant with industrial controller experience.</p>
+        <div class="card">
+          <h3>PLCs &amp; Automation</h3>
+          <p>Structured Text, FBD, and CFC. Siemens-certified mechatronic assistant with industrial controller experience.</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon">📡</div>
-          <h3>IoT &amp; Embedded systems </h3>
+        <div class="card">
+          <h3>IoT &amp; Embedded Systems</h3>
           <p>MQTT, HTTP, CAN, Modbus, Ethernet/IP. End-to-end IoT pipelines with cloud dashboards and real-time data visualization.</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon">🖥️</div>
+        <div class="card">
           <h3>CAD &amp; 3D Design</h3>
           <p>SolidWorks, Fusion 360, OnShape, AutoCAD, KiCAD. Full product lifecycle from concept sketches to fabrication-ready models.</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon">💻</div>
+        <div class="card">
           <h3>Programming</h3>
-          <p> Professional expertise in Structured Text, C++, Python. Data handling and manipulation in CSV, JSON, and XML. HMI interface design and web dashboards.</p>
+          <p>Structured Text, C++, Python. Data handling in CSV, JSON, and XML. HMI interface design and web dashboards.</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon">🏗️</div>
+        <div class="card">
           <h3>Systems Integration</h3>
-          <p>Electrical schematics, power distribution, control signal design, subsystem architecture for complex industrial machinery.</p>
+          <p>Electrical schematics, power distribution, control signal design, and subsystem architecture for complex industrial machinery.</p>
         </div>
 
-        <div class="skill-card">
-          <div class="skill-icon">🎮</div>
+        <div class="card">
           <h3>3D Modelling &amp; Game Dev</h3>
-          <p>Blender and ZBrush for asset creation, Godot and Unreal Engine for game production. Custom shaders, AI traffic systems, and high-fidelity game environment assets.</p>
+          <p>Blender, ZBrush, Godot, and Unreal Engine. Custom shaders, AI traffic systems, and high-fidelity game environments.</p>
         </div>
 
       </div>
     </div>
   </section>
 
-  <!-- ========== EXPERIENCE ========== -->
-  <section id="experience" class="section">
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section alt">
     <div class="container">
-      <p class="section-label">Career</p>
-      <h2 class="section-heading">Work Experience</h2>
+      <p class="label">Career</p>
+      <h2>Work Experience</h2>
       <div class="timeline">
 
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
               <div>
-                <h3>STEM Manager/Lead Facilitator</h3>
-                <span class="timeline-company">The Tree of Life Foundation - Kenya</span>
+                <h3>STEM Manager / Lead Facilitator</h3>
+                <span class="company">The Tree of Life Foundation — Kenya</span>
               </div>
-              <span class="timeline-date">August 2026 — Present</span>
+              <span class="date">Aug 2026 — Present</span>
             </div>
             <ul>
-              <li>Oversaw the full operation and management of Innovation Nests (permanent and mobile), ensuring functionality, safety, and accessibility (including for persons with disabilities).</li>
+              <li>Oversaw the full operation and management of Innovation Nests (permanent and mobile), ensuring functionality, safety, and accessibility including for persons with disabilities.</li>
               <li>Led the planning and delivery of hands-on workshops in digital fabrication, robotics, coding, and STEAM subjects.</li>
-              <li>Supervised and mentored subordinated staff, ensuring quality standards and effective learning experiences.</li>
+              <li>Supervised and mentored subordinate staff, ensuring quality standards and effective learning experiences.</li>
               <li>Coordinated training-of-trainers sessions and supported school tutors in implementing lab-based activities.</li>
-              <li>Managed equipment, maintenance schedules, and troubleshooting (including in mobile/off-site contexts).</li>
+              <li>Managed equipment, maintenance schedules, and troubleshooting including in mobile and off-site contexts.</li>
               <li>Supported integration and use of the e-learning platform and digital learning resources.</li>
-              <li>Supported the development and the implementation of education initiatives within local communities, in line with the organization’s priorities</li>
+              <li>Supported the development and implementation of education initiatives within local communities.</li>
             </ul>
           </div>
         </div>
 
-        
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
               <div>
                 <h3>Lead Mechatronic Engineer</h3>
-                <span class="timeline-company">Wicked Automation</span>
+                <span class="company">Wicked Automation</span>
               </div>
-              <span class="timeline-date">Jan 2025 — July 2026</span>
+              <span class="date">Jan 2025 — Jul 2026</span>
             </div>
             <ul>
-              <li>Led a team of mechatronic engineers on projects including mining drill rigs, wet scrubber systems, and water capture/transfer systems from inception to implementation.</li>
+              <li>Led a team on projects including mining drill rigs, wet scrubber systems, and water capture/transfer systems from inception to implementation.</li>
               <li>Designed overall system architectures, defining subsystems, and ensuring seamless integration.</li>
               <li>Developed electrical schematics for power distribution, control signal flow, and safety.</li>
               <li>Wrote PLC programs and designed HMI interfaces and web dashboards for real-time monitoring.</li>
@@ -177,15 +131,15 @@
           </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
               <div>
                 <h3>Mechanical / Product Designer</h3>
-                <span class="timeline-company">Veno Autobotics</span>
+                <span class="company">Veno Autobotics</span>
               </div>
-              <span class="timeline-date">Oct 2024 — Jan 2025</span>
+              <span class="date">Oct 2024 — Jan 2025</span>
             </div>
             <ul>
               <li>Generated innovative product ideas for embedded system projects based on technological advancements.</li>
@@ -195,33 +149,33 @@
           </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
               <div>
                 <h3>Game Developer</h3>
-                <span class="timeline-company">Team II Interactive</span>
+                <span class="company">Team II Interactive</span>
               </div>
-              <span class="timeline-date">Aug 2023 — Apr 2024</span>
+              <span class="date">Aug 2023 — Apr 2024</span>
             </div>
             <ul>
               <li>Crafted high-quality 3D assets for game environments and characters in Unreal Engine.</li>
-              <li>Built a Traffic System Collision Avoidance AI and a full racing game template environment.</li>
+              <li>Built a Traffic System Collision Avoidance AI and a racing game template environment.</li>
               <li>Collaborated cross-functionally to ship an endless runner game on schedule.</li>
             </ul>
           </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
               <div>
                 <h3>Mechatronic Engineering Intern</h3>
-                <span class="timeline-company">Center for Development of Electronic Devices</span>
+                <span class="company">Center for Development of Electronic Devices</span>
               </div>
-              <span class="timeline-date">Jan 2023 — May 2023</span>
+              <span class="date">Jan 2023 — May 2023</span>
             </div>
             <ul>
               <li>Diagnosed and resolved faults in PLC controllers and sensors across plant systems.</li>
@@ -231,15 +185,15 @@
           </div>
         </div>
 
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
+        <div class="tl-item">
+          <div class="tl-dot"></div>
+          <div class="tl-card">
+            <div class="tl-head">
               <div>
                 <h3>MEP Engineering Intern</h3>
-                <span class="timeline-company">Linx Consulting Engineers</span>
+                <span class="company">Linx Consulting Engineers</span>
               </div>
-              <span class="timeline-date">Feb 2022 — May 2022</span>
+              <span class="date">Feb 2022 — May 2022</span>
             </div>
             <ul>
               <li>Designed HVAC, electrical, and plumbing systems for construction projects.</li>
@@ -251,39 +205,36 @@
       </div>
     </div>
   </section>
- 
-  <!-- ========== CONTACT ========== -->
-  <section id="contact" class="section section-dark">
-    <div class="container contact-container">
-      <p class="section-label">Contact</p>
-      <h2 class="section-heading">Let's Build Something.</h2>
-      <p class="contact-sub">
-        Open to new projects, collaborations, and opportunities in industrial automation, IoT, and embedded systems.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:makorifreddy1@gmail.com" class="contact-item">
-          <span class="contact-icon">✉</span>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container contact-wrap">
+      <p class="label">Contact</p>
+      <h2>Let's Build Something.</h2>
+      <p class="contact-sub">Open to new projects, collaborations, and opportunities in industrial automation, IoT, and embedded systems.</p>
+      <div class="contact-grid">
+        <a href="mailto:makorifreddy1@gmail.com" class="contact-card">
+          <span class="c-icon">Email</span>
           <span>makorifreddy1@gmail.com</span>
         </a>
-        <a href="tel:+254729516606" class="contact-item">
-          <span class="contact-icon">📞</span>
+        <a href="tel:+254729516606" class="contact-card">
+          <span class="c-icon">Phone</span>
           <span>+254 729 516 606</span>
         </a>
-        <a href="https://github.com/mak0rifreddy" target="_blank" class="contact-item">
-          <span class="contact-icon">⌥</span>
+        <a href="https://github.com/mak0rifreddy" target="_blank" rel="noopener" class="contact-card">
           <span>GitHub</span>
         </a>
-        <a href="https://www.linkedin.com/in/fred-makori/" target="_blank" class="contact-item">
-          <span class="contact-icon">in</span>
+        <a href="https://www.linkedin.com/in/fred-makori/" target="_blank" rel="noopener" class="contact-card">
           <span>LinkedIn</span>
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ========== FOOTER ========== -->
   <footer>
-    <p>© 2026 Fred Makori · Nairobi, Kenya · Built with purpose.</p>
+    <div class="container">
+      <p>© 2026 Fred Makori · Nairobi, Kenya</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
