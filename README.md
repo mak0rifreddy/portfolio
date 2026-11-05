@@ -1,5 +1,3 @@
-![Fred Makori](https://mak0rifreddy.github.io/portfolio/assets/profile.jpeg)
-
 About
 
 ## Engineering at the intersection of machines and code.
