@@ -1,291 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fred Makori - Mechatronic Engineer</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <title>Fred Makori | Mechatronic Engineer</title>
+    <meta name="description" content="Fred Makori - Mechatronic Engineer specializing in IoT, embedded systems, and systems integration. Engineering at the intersection of machines and code.">
+    <meta name="author" content="Fred Makori">
 
-  <!-- ========== NAVIGATION ========== -->
-  <nav id="navbar">
-    <div class="nav-logo">FM<span class="dot">.</span></div>
-    <ul class="nav-links">
-      <li><a href="#about">Home</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </button>
-  </nav>
+    <!-- Mobile-friendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- ========== HERO ========== -->
-  <section id="hero">
-    <canvas id="circuitCanvas"></canvas>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Mechatronic Engineer · Nairobi, Kenya</p>
-      <h1 class="hero-name">Fred<br /><span class="accent">Makori</span></h1>
-      <p class="hero-tagline">
-        Building intelligent systems at the intersection of<br />
-        hardware, embedded software, and automation.
-      </p>
-      <div class="hero-cta">
-       <a href="projects.html" class="btn btn-outline">Projects</a>
-        <a href="#contact" class="btn btn-outline">Get in Touch</a>
-      </div>
-    </div>
-  </section>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-  <!-- ========== ABOUT ========== -->
-  <section id="about" class="section">
-    <div class="container about-grid">
-      <div class="about-image-wrap">
-        <div class="image-placeholder">
-          <img src="assets/profile.jpeg" alt="Fred Makori" loading="lazy" />
+    <!-- Minimalist CSS -->
+    <link rel="stylesheet" href="minimalist.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+  </head>
+  <body>
+    <!-- User info -->
+    <header>
+      <div class="container">
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-3 text-center mb-4 mb-lg-0">
+            <img src="https://mak0rifreddy.github.io/portfolio/assets/profile.jpeg" class="user-image rounded-circle" alt="Fred Makori">
+          </div>
+          <div class="col-lg-8">
+            <h1 class="h2 font-weight-bold mb-1">Fred Makori</h1>
+            <p class="text-muted font-italic mb-3">Engineering at the intersection of machines and code.</p>
+            <p>
+              I'm a Mechatronic Engineer with expertise in IoT, embedded systems, and systems integration. From mining drill rigs to secure biometric locks, I design and build end-to-end solutions that bridge the physical and digital worlds.
+            </p>
+            <p>
+              My background spans game development, PLC programming, electrical schematics, 3D modelling, and industrial automation — with hands-on experience across construction, manufacturing, automotive, and product development sectors in Kenya and beyond.
+            </p>
+
+            <!-- Highlights / Metrics -->
+            <div class="mb-3 d-flex flex-wrap">
+              <span class="badge badge-dark py-2 px-3 mr-2 mb-2">5+ Years Experience</span>
+              <span class="badge badge-dark py-2 px-3 mr-2 mb-2">10+ Projects Delivered</span>
+              <span class="badge badge-dark py-2 px-3 mb-2">4 Industries</span>
+            </div>
+
+            <!-- Social / Contact Links -->
+            <ul class="list-inline social-icons mb-0">
+              <li class="list-inline-item mr-3">
+                <a href="https://github.com/mak0rifreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <i class="fab fa-github fa-lg"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="https://www.linkedin.com/in/fred-makori/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                  <i class="fab fa-linkedin-in fa-lg"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="mailto:makorifreddy1@gmail.com" aria-label="Email makorifreddy1@gmail.com">
+                  <i class="fas fa-envelope fa-lg"></i>
+                </a>
+              </li>
+              <li class="list-inline-item mr-3">
+                <a href="tel:+254729516606" aria-label="Call +254 729 516 606">
+                  <i class="fas fa-phone-alt fa-lg"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="about-text">
-        <p class="section-label">About Me</p>
-        <h2 class="section-heading">Engineering at the intersection of machines and code.</h2>
-        <p>
-          I'm a dynamic Mechatronic Engineer with deep expertise in IoT, embedded systems, and
-          systems integration. From mining drill rigs to secure biometric locks, I design and build
-          end-to-end solutions that bridge the physical and digital worlds.
+    </header>
+
+    <!-- Content -->
+    <section>
+      <!-- Content Switcher -->
+      <div class="d-flex justify-content-center">
+        <div class="list-group list-group-horizontal-md" id="content-tabs" role="tablist">
+          <a class="list-group-item small text-uppercase active" id="list-experience-list" data-toggle="list" href="#experience" role="tab" aria-controls="experience">Experience</a>
+          <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab" aria-controls="projects">Projects</a>
+          <a class="list-group-item small text-uppercase" id="list-capabilities-list" data-toggle="list" href="#capabilities" role="tab" aria-controls="capabilities">Capabilities</a>
+        </div>
+      </div>
+
+      <!-- Tab Content -->
+      <div class="container pt-5 tab-content">
+        <!-- Experience Panel -->
+        <div class="tab-pane fade show active" id="experience" role="tabpanel" aria-labelledby="list-experience-list">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg">
+              <!-- Timeline -->
+              <div class="timeline-container">
+                <!-- 1. STEM Manager / Lead Facilitator -->
+                <div class="timeline-block timeline-block-right">
+                  <div class="marker"></div>
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">STEM Manager / Lead Facilitator</h3>
+                    <span class="timeline-span font-weight-bold">The Tree of Life Foundation — Kenya</span>
+                    <p class="text-muted small mb-2">Aug 2026 — Present</p>
+                    <ul class="timeline-ul small text-muted text-left pl-3 mb-0">
+                      <li>Oversaw the full operation and management of Innovation Nests (permanent and mobile), ensuring functionality, safety, and accessibility including for persons with disabilities.</li>
+                      <li>Led the planning and delivery of hands-on workshops in digital fabrication, robotics, coding, and STEAM subjects.</li>
+                      <li>Supervised and mentored subordinate staff, ensuring quality standards and effective learning experiences.</li>
+                      <li>Coordinated training-of-trainers sessions and supported school tutors in implementing lab-based activities.</li>
+                      <li>Managed equipment, maintenance schedules, and troubleshooting in mobile and off-site contexts.</li>
+                      <li>Supported integration and use of the e-learning platform and digital learning resources.</li>
+                      <li>Supported the development and implementation of education initiatives within local communities.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 2. Lead Mechatronic Engineer -->
+                <div class="timeline-block timeline-block-left">
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Lead Mechatronic Engineer</h3>
+                    <span class="timeline-span font-weight-bold">Wicked Automation</span>
+                    <p class="text-muted small mb-2">Jan 2025 — Jul 2026</p>
+                    <ul class="timeline-ul small text-muted text-left pl-3 mb-0">
+                      <li>Led engineering teams on projects including mining drill rigs, wet scrubber systems, and water capture/transfer systems from inception to implementation.</li>
+                      <li>Designed overall system architectures, defining subsystems, and ensuring seamless integration.</li>
+                      <li>Developed electrical schematics for power distribution, control signal flow, and safety.</li>
+                      <li>Wrote PLC programs and designed HMI interfaces and web dashboards for real-time monitoring.</li>
+                    </ul>
+                  </div>
+                  <div class="marker"></div>
+                </div>
+
+                <!-- 3. Mechanical / Product Designer -->
+                <div class="timeline-block timeline-block-right">
+                  <div class="marker"></div>
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Mechanical / Product Designer</h3>
+                    <span class="timeline-span font-weight-bold">Veno Autobotics</span>
+                    <p class="text-muted small mb-2">Oct 2024 — Jan 2025</p>
+                    <ul class="timeline-ul small text-muted text-left pl-3 mb-0">
+                      <li>Generated innovative product ideas for embedded system projects based on technological advancements.</li>
+                      <li>Created 3D models, sketches, and prototypes for concept validation.</li>
+                      <li>Ran mechanical simulations to verify properties before fabrication.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 4. Game Developer -->
+                <div class="timeline-block timeline-block-left">
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Game Developer</h3>
+                    <span class="timeline-span font-weight-bold">Team II Interactive</span>
+                    <p class="text-muted small mb-2">Aug 2023 — Apr 2024</p>
+                    <ul class="timeline-ul small text-muted text-left pl-3 mb-0">
+                      <li>Crafted high-quality 3D assets for game environments and characters in Unreal Engine.</li>
+                      <li>Built a Traffic System Collision Avoidance AI and a racing game template environment.</li>
+                      <li>Collaborated cross-functionally to ship an endless runner game on schedule.</li>
+                    </ul>
+                  </div>
+                  <div class="marker"></div>
+                </div>
+
+                <!-- 5. Mechatronic Engineering Intern -->
+                <div class="timeline-block timeline-block-right">
+                  <div class="marker"></div>
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Mechatronic Engineering Intern</h3>
+                    <span class="timeline-span font-weight-bold">Center for Development of Electronic Devices</span>
+                    <p class="text-muted small mb-2">Jan 2023 — May 2023</p>
+                    <ul class="timeline-ul small text-muted text-left pl-3 mb-0">
+                      <li>Diagnosed and resolved faults in PLC controllers and sensors across plant systems.</li>
+                      <li>Co-developed a biometric secure door lock system.</li>
+                      <li>Automated a Cooking Gas Monitoring System with IoT data acquisition.</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- 6. MEP Engineering Intern -->
+                <div class="timeline-block timeline-block-left">
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">MEP Engineering Intern</h3>
+                    <span class="timeline-span font-weight-bold">Linx Consulting Engineers</span>
+                    <p class="text-muted small mb-2">Feb 2022 — May 2022</p>
+                    <ul class="timeline-ul small text-muted text-left pl-3 mb-0">
+                      <li>Designed HVAC, electrical, and plumbing systems for construction projects.</li>
+                      <li>Gained experience in lighting, power distribution, fire alarm, water supply, and drainage systems.</li>
+                    </ul>
+                  </div>
+                  <div class="marker"></div>
+                </div>
+              </div>
+              <!-- ./timeline -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Projects Panel -->
+        <div class="tab-pane fade" id="projects" role="tabpanel" aria-labelledby="list-projects-list">
+          <div class="row justify-content-lg-center">
+            <!-- Project 1 -->
+            <div class="col-lg-8 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h4 class="card-title font-weight-bold mb-1">Mining Drill Rigs &amp; Wet Scrubber Automation</h4>
+                    <span class="badge badge-secondary">Wicked Automation</span>
+                  </div>
+                  <p class="card-text text-muted">
+                    Full-lifecycle industrial automation architecture. Developed comprehensive electrical schematics for power distribution and safety circuits, engineered custom PLC control logic, and deployed real-time HMI interfaces and web dashboards for telemetry monitoring.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge badge-light border mr-1">PLCs &amp; Automation</span>
+                    <span class="badge badge-light border mr-1">Electrical Schematics</span>
+                    <span class="badge badge-light border mr-1">HMI / SCADA</span>
+                    <span class="badge badge-light border">Web Dashboards</span>
+                  </div>
+                  <ul class="list-inline social-icons mb-0">
+                    <li class="list-inline-item">
+                      <a href="https://github.com/mak0rifreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="mailto:makorifreddy1@gmail.com?subject=Inquiry%20regarding%20Mining%20Drill%20Rig%20Automation" aria-label="Inquire via email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-lg-8 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h4 class="card-title font-weight-bold mb-1">Biometric Secure Door Lock System</h4>
+                    <span class="badge badge-secondary">CDED</span>
+                  </div>
+                  <p class="card-text text-muted">
+                    Co-developed an embedded security access system incorporating biometric authentication, custom firmware, microcontrollers, and electronic latch mechanisms designed for robust physical access control.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge badge-light border mr-1">Embedded Systems</span>
+                    <span class="badge badge-light border mr-1">C / C++</span>
+                    <span class="badge badge-light border mr-1">Biometrics</span>
+                    <span class="badge badge-light border">Hardware Integration</span>
+                  </div>
+                  <ul class="list-inline social-icons mb-0">
+                    <li class="list-inline-item">
+                      <a href="https://github.com/mak0rifreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="mailto:makorifreddy1@gmail.com?subject=Inquiry%20regarding%20Biometric%20Door%20Lock" aria-label="Inquire via email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-lg-8 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h4 class="card-title font-weight-bold mb-1">Automated Cooking Gas Monitoring System</h4>
+                    <span class="badge badge-secondary">CDED</span>
+                  </div>
+                  <p class="card-text text-muted">
+                    End-to-end IoT sensor acquisition and telemetry pipeline for gas level detection and leakage prevention. Configured sensor inputs, cloud data publishing via MQTT/HTTP, and real-time visualization dashboards.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge badge-light border mr-1">IoT</span>
+                    <span class="badge badge-light border mr-1">MQTT / HTTP</span>
+                    <span class="badge badge-light border mr-1">Sensor Telemetry</span>
+                    <span class="badge badge-light border">Cloud Dashboards</span>
+                  </div>
+                  <ul class="list-inline social-icons mb-0">
+                    <li class="list-inline-item">
+                      <a href="https://github.com/mak0rifreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="mailto:makorifreddy1@gmail.com?subject=Inquiry%20regarding%20Cooking%20Gas%20Monitor" aria-label="Inquire via email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 4 -->
+            <div class="col-lg-8 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h4 class="card-title font-weight-bold mb-1">Traffic AI Collision Avoidance &amp; Simulation</h4>
+                    <span class="badge badge-secondary">Team II Interactive</span>
+                  </div>
+                  <p class="card-text text-muted">
+                    Built custom artificial intelligence systems for vehicular collision avoidance and traffic simulation inside Unreal Engine. Created 3D game assets, racing environments, and collaborated to ship an endless runner game.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge badge-light border mr-1">Unreal Engine</span>
+                    <span class="badge badge-light border mr-1">AI Systems</span>
+                    <span class="badge badge-light border mr-1">Blender</span>
+                    <span class="badge badge-light border">Game Dev</span>
+                  </div>
+                  <ul class="list-inline social-icons mb-0">
+                    <li class="list-inline-item">
+                      <a href="https://github.com/mak0rifreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="mailto:makorifreddy1@gmail.com?subject=Inquiry%20regarding%20Traffic%20AI" aria-label="Inquire via email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 5 -->
+            <div class="col-lg-8 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h4 class="card-title font-weight-bold mb-1">Innovation Nests &amp; STEAM Makerspaces</h4>
+                    <span class="badge badge-secondary">Tree of Life Foundation</span>
+                  </div>
+                  <p class="card-text text-muted">
+                    Full operational management of permanent and mobile innovation fabrication labs. Facilitated hands-on robotics, coding, digital fabrication (3D printing/laser cutting), and training-of-trainers programs across Kenya.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge badge-light border mr-1">Digital Fabrication</span>
+                    <span class="badge badge-light border mr-1">Robotics</span>
+                    <span class="badge badge-light border mr-1">3D Printing</span>
+                    <span class="badge badge-light border">STEAM</span>
+                  </div>
+                  <ul class="list-inline social-icons mb-0">
+                    <li class="list-inline-item">
+                      <a href="https://github.com/mak0rifreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="mailto:makorifreddy1@gmail.com?subject=Inquiry%20regarding%20Innovation%20Nests" aria-label="Inquire via email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 6 -->
+            <div class="col-lg-8 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <div class="d-flex justify-content-between align-items-start mb-2">
+                    <h4 class="card-title font-weight-bold mb-1">Embedded Product CAD &amp; Mechanical Simulations</h4>
+                    <span class="badge badge-secondary">Veno Autobotics</span>
+                  </div>
+                  <p class="card-text text-muted">
+                    Engineered conceptual 3D product models, enclosures, and functional prototypes for embedded system applications. Conducted mechanical stress and physical simulations prior to fabrication.
+                  </p>
+                  <div class="mb-3">
+                    <span class="badge badge-light border mr-1">SolidWorks</span>
+                    <span class="badge badge-light border mr-1">Fusion 360</span>
+                    <span class="badge badge-light border mr-1">FEA Simulations</span>
+                    <span class="badge badge-light border">Prototyping</span>
+                  </div>
+                  <ul class="list-inline social-icons mb-0">
+                    <li class="list-inline-item">
+                      <a href="https://github.com/mak0rifreddy" target="_blank" rel="noopener noreferrer" aria-label="GitHub Profile">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a href="mailto:makorifreddy1@gmail.com?subject=Inquiry%20regarding%20Product%20Design" aria-label="Inquire via email">
+                        <i class="fas fa-envelope"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Capabilities Panel -->
+        <div class="tab-pane fade" id="capabilities" role="tabpanel" aria-labelledby="list-capabilities-list">
+          <div class="row justify-content-lg-center">
+            <!-- Capability 1 -->
+            <div class="col-lg-6 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold mb-2">
+                    <i class="fas fa-cogs mr-2 text-dark"></i>PLCs &amp; Automation
+                  </h4>
+                  <p class="card-text text-muted">
+                    Structured Text, FBD, and CFC. Siemens-certified mechatronic assistant with deep industrial controller experience.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Capability 2 -->
+            <div class="col-lg-6 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold mb-2">
+                    <i class="fas fa-network-wired mr-2 text-dark"></i>IoT &amp; Embedded Systems
+                  </h4>
+                  <p class="card-text text-muted">
+                    MQTT, HTTP, CAN, Modbus, Ethernet/IP. End-to-end IoT pipelines with cloud dashboards and real-time data visualization.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Capability 3 -->
+            <div class="col-lg-6 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold mb-2">
+                    <i class="fas fa-cube mr-2 text-dark"></i>CAD &amp; 3D Design
+                  </h4>
+                  <p class="card-text text-muted">
+                    SolidWorks, Fusion 360, OnShape, AutoCAD, KiCAD. Full product lifecycle from concept sketches to fabrication-ready models.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Capability 4 -->
+            <div class="col-lg-6 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold mb-2">
+                    <i class="fas fa-code mr-2 text-dark"></i>Programming
+                  </h4>
+                  <p class="card-text text-muted">
+                    Structured Text, C++, Python. Data handling in CSV, JSON, and XML. HMI interface design and web dashboards.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Capability 5 -->
+            <div class="col-lg-6 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold mb-2">
+                    <i class="fas fa-project-diagram mr-2 text-dark"></i>Systems Integration
+                  </h4>
+                  <p class="card-text text-muted">
+                    Electrical schematics, power distribution, control signal design, and subsystem architecture for complex industrial machinery.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Capability 6 -->
+            <div class="col-lg-6 pb-4">
+              <div class="card h-100 shadow-sm border">
+                <div class="card-body">
+                  <h4 class="card-title font-weight-bold mb-2">
+                    <i class="fas fa-gamepad mr-2 text-dark"></i>3D Modelling &amp; Game Dev
+                  </h4>
+                  <p class="card-text text-muted">
+                    Blender, ZBrush, Godot, and Unreal Engine. Custom shaders, AI traffic systems, and high-fidelity game environments.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer & Contact -->
+    <footer>
+      <div class="container text-center py-5">
+        <h3 class="h4 font-weight-bold mb-2">Let's Build Something.</h3>
+        <p class="text-muted mb-3 mx-auto" style="max-width: 600px;">
+          Open to new projects, collaborations, and opportunities in industrial automation, IoT, and embedded systems.
         </p>
-        <p>
-          My background spans Game development, PLC programming, electrical schematics, 3D modelling, and
-          industrial automation, with hands-on experience in construction, manufacturing, automotive, and
-          product development sectors across Kenya and beyond.
+        <p class="mb-4">
+          <a href="mailto:makorifreddy1@gmail.com" class="mr-3 font-weight-bold">
+            <i class="fas fa-envelope mr-1"></i>makorifreddy1@gmail.com
+          </a>
+          <a href="tel:+254729516606" class="mr-3 font-weight-bold">
+            <i class="fas fa-phone-alt mr-1"></i>+254 729 516 606
+          </a>
+          <a href="https://github.com/mak0rifreddy" target="_blank" rel="noopener noreferrer" class="mr-3 font-weight-bold">
+            <i class="fab fa-github mr-1"></i>GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/fred-makori/" target="_blank" rel="noopener noreferrer" class="font-weight-bold">
+            <i class="fab fa-linkedin-in mr-1"></i>LinkedIn
+          </a>
         </p>
-        <div class="about-stats">
-          <div class="stat">
-            <span class="stat-number" data-target="5">0</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number" data-target="10">0</span>
-            <span class="stat-label">Projects Delivered</span>
-          </div>
-          <div class="stat">
-            <span class="stat-number" data-target="4">0</span>
-            <span class="stat-label">Industries</span>
-          </div>
-        </div>
+        <p class="small text-muted mb-0">
+          &copy; Fred Makori. Built with <a href="https://github.com/imgios/minimalist" target="_blank" rel="noopener noreferrer">minimalist</a> &amp; Bootstrap.
+        </p>
       </div>
-    </div>
-  </section>
+    </footer>
 
-  <!-- ========== SKILLS ========== -->
-  <section id="skills" class="section section-dark">
-    <div class="container">
-      <p class="section-label">Capabilities</p>
-      <h2 class="section-heading">Tools &amp; Technologies</h2>
-      <div class="skills-grid">
-
-        <div class="skill-card">
-          <div class="skill-icon">⚙️</div>
-          <h3>PLCs &amp; Automation </h3>
-          <p>PLC programming in Structured Text, FBD, and CFC. Siemens-certified mechatronic assistant with industrial controller experience.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">📡</div>
-          <h3>IoT &amp; Embedded systems </h3>
-          <p>MQTT, HTTP, CAN, Modbus, Ethernet/IP. End-to-end IoT pipelines with cloud dashboards and real-time data visualization.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">🖥️</div>
-          <h3>CAD &amp; 3D Design</h3>
-          <p>SolidWorks, Fusion 360, OnShape, AutoCAD, KiCAD. Full product lifecycle from concept sketches to fabrication-ready models.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">💻</div>
-          <h3>Programming</h3>
-          <p> Professional expertise in Structured Text, C++, Python. Data handling and manipulation in CSV, JSON, and XML. HMI interface design and web dashboards.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">🏗️</div>
-          <h3>Systems Integration</h3>
-          <p>Electrical schematics, power distribution, control signal design, subsystem architecture for complex industrial machinery.</p>
-        </div>
-
-        <div class="skill-card">
-          <div class="skill-icon">🎮</div>
-          <h3>3D Modelling &amp; Game Dev</h3>
-          <p>Blender and ZBrush for asset creation, Godot and Unreal Engine for game production. Custom shaders, AI traffic systems, and high-fidelity game environment assets.</p>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== EXPERIENCE ========== -->
-  <section id="experience" class="section">
-    <div class="container">
-      <p class="section-label">Career</p>
-      <h2 class="section-heading">Work Experience</h2>
-      <div class="timeline">
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>STEM Manager/Lead Facilitator</h3>
-                <span class="timeline-company">The Tree of Life Foundation - Kenya</span>
-              </div>
-              <span class="timeline-date">August 2026 — Present</span>
-            </div>
-            <ul>
-              <li>Oversaw the full operation and management of Innovation Nests (permanent and mobile), ensuring functionality, safety, and accessibility (including for persons with disabilities).</li>
-              <li>Led the planning and delivery of hands-on workshops in digital fabrication, robotics, coding, and STEAM subjects.</li>
-              <li>Supervised and mentored subordinated staff, ensuring quality standards and effective learning experiences.</li>
-              <li>Coordinated training-of-trainers sessions and supported school tutors in implementing lab-based activities.</li>
-              <li>Managed equipment, maintenance schedules, and troubleshooting (including in mobile/off-site contexts).</li>
-              <li>Supported integration and use of the e-learning platform and digital learning resources.</li>
-              <li>Supported the development and the implementation of education initiatives within local communities, in line with the organization’s priorities</li>
-            </ul>
-          </div>
-        </div>
-
-        
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Lead Mechatronic Engineer</h3>
-                <span class="timeline-company">Wicked Automation</span>
-              </div>
-              <span class="timeline-date">Jan 2025 — July 2026</span>
-            </div>
-            <ul>
-              <li>Led a team of mechatronic engineers on projects including mining drill rigs, wet scrubber systems, and water capture/transfer systems from inception to implementation.</li>
-              <li>Designed overall system architectures, defining subsystems, and ensuring seamless integration.</li>
-              <li>Developed electrical schematics for power distribution, control signal flow, and safety.</li>
-              <li>Wrote PLC programs and designed HMI interfaces and web dashboards for real-time monitoring.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Mechanical / Product Designer</h3>
-                <span class="timeline-company">Veno Autobotics</span>
-              </div>
-              <span class="timeline-date">Oct 2024 — Jan 2025</span>
-            </div>
-            <ul>
-              <li>Generated innovative product ideas for embedded system projects based on technological advancements.</li>
-              <li>Created 3D models, sketches, and prototypes for concept validation.</li>
-              <li>Ran mechanical simulations to verify properties before fabrication.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Game Developer</h3>
-                <span class="timeline-company">Team II Interactive</span>
-              </div>
-              <span class="timeline-date">Aug 2023 — Apr 2024</span>
-            </div>
-            <ul>
-              <li>Crafted high-quality 3D assets for game environments and characters in Unreal Engine.</li>
-              <li>Built a Traffic System Collision Avoidance AI and a full racing game template environment.</li>
-              <li>Collaborated cross-functionally to ship an endless runner game on schedule.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>Mechatronic Engineering Intern</h3>
-                <span class="timeline-company">Center for Development of Electronic Devices</span>
-              </div>
-              <span class="timeline-date">Jan 2023 — May 2023</span>
-            </div>
-            <ul>
-              <li>Diagnosed and resolved faults in PLC controllers and sensors across plant systems.</li>
-              <li>Co-developed a biometric secure door lock system.</li>
-              <li>Automated a Cooking Gas Monitoring System with IoT data acquisition.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-marker"></div>
-          <div class="timeline-content">
-            <div class="timeline-header">
-              <div>
-                <h3>MEP Engineering Intern</h3>
-                <span class="timeline-company">Linx Consulting Engineers</span>
-              </div>
-              <span class="timeline-date">Feb 2022 — May 2022</span>
-            </div>
-            <ul>
-              <li>Designed HVAC, electrical, and plumbing systems for construction projects.</li>
-              <li>Gained experience in lighting, power distribution, fire alarm, water supply, and drainage systems.</li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
- 
-  <!-- ========== CONTACT ========== -->
-  <section id="contact" class="section section-dark">
-    <div class="container contact-container">
-      <p class="section-label">Contact</p>
-      <h2 class="section-heading">Let's Build Something.</h2>
-      <p class="contact-sub">
-        Open to new projects, collaborations, and opportunities in industrial automation, IoT, and embedded systems.
-      </p>
-      <div class="contact-links">
-        <a href="mailto:makorifreddy1@gmail.com" class="contact-item">
-          <span class="contact-icon">✉</span>
-          <span>makorifreddy1@gmail.com</span>
-        </a>
-        <a href="tel:+254729516606" class="contact-item">
-          <span class="contact-icon">📞</span>
-          <span>+254 729 516 606</span>
-        </a>
-        <a href="https://github.com/mak0rifreddy" target="_blank" class="contact-item">
-          <span class="contact-icon">⌥</span>
-          <span>GitHub</span>
-        </a>
-        <a href="https://www.linkedin.com/in/fred-makori/" target="_blank" class="contact-item">
-          <span class="contact-icon">in</span>
-          <span>LinkedIn</span>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ========== FOOTER ========== -->
-  <footer>
-    <p>© 2026 Fred Makori · Nairobi, Kenya · Built with purpose.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
 </html>
